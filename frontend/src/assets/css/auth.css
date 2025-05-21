@@ -1,0 +1,28 @@
+.auth-form {
+  max-width: 400px;
+  margin: 60px auto;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+}
+
+.auth-form h2 {
+  font-weight: 600;
+  color: #333;
+}
+
+.auth-form .form-label {
+  font-weight: 500;
+  color: #555;
+}
+
+.auth-form input.form-control {
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.auth-form .btn {
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 8px;
+}

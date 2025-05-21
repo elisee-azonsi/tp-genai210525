@@ -1,0 +1,138 @@
+.home {
+  max-width: 900px;
+  margin: 30px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 15px;
+}
+
+.aeq {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  /* Forcer hauteur identique */
+  align-items: stretch;
+}
+
+.aeq > form {
+  flex: 0 0 300px; /* largeur fixe 300px */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+  height: 300px;
+}
+
+.aeq > .card {
+  flex: 1; /* prend le reste de la place */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+  height: 550px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+
+.aeq form {
+  gap: 15px;
+}
+
+.aeq input.form-control {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.aeq button.btn-success {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto; /* pousse le bouton en bas du form */
+}
+
+.aeq button.btn-success:hover {
+  background-color: #218838;
+}
+
+.card-body h5 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.card-body p {
+  white-space: pre-wrap;
+  font-size: 1rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+/* Historique */
+
+h3.mt-5 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+ul.list-group {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-left: 0;
+  list-style-type: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+ul.list-group li.list-group-item {
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  word-wrap: break-word;
+}
+
+ul.list-group li.list-group-item:last-child {
+  border-bottom: none;
+}
+
+ul.list-group li strong {
+  font-size: 1.05rem;
+  color: #2c3e50;
+}
+
+ul.list-group li small {
+  color: #777;
+  font-style: italic;
+}
+
+ul.list-group li p {
+  margin-top: 8px;
+  white-space: pre-wrap;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  .aeq {
+    flex-direction: column;
+  }
+  .aeq > form,
+  .aeq > .card {
+    min-height: auto;
+    height: auto;
+  }
+}
